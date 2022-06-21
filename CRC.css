@@ -13,7 +13,7 @@
 .sidebar-bottomhalf {
 	grid-area: sidebar2;}
 
-@media (min-width: 900px) {
+@media (min-width: 720px) {
 	.container4 {
 		display: grid;
 		grid-template-areas: 
@@ -22,7 +22,7 @@
 		"menu main main main main sidebar1"
 		"menu main main main main sidebar2";}}
 
-@media (max-width:  899px) {
+@media (max-width:  719px) {
 	.container4{
 		display: grid;
 		grid-template-areas:
