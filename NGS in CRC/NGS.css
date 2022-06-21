@@ -1,0 +1,38 @@
+.main-head {
+	grid-area: header;}
+
+.side-nav {
+	grid-area: menu;}
+
+.Introduction{
+	grid-area: introduction;}
+
+.Section1 {
+	grid-area: section1;}
+
+.Section2 {
+	grid-area: section2;}
+
+.Section3 {
+	grid-area: section3;}
+
+@media (min-width: 720px) {
+	.container2 {
+	display: grid;
+	grid-template-areas: 
+	"header header header header"
+	"menu introduction introduction introduction"
+	"menu section1 section2 section3"
+	"menu section1 section2 section3";}}
+
+@media (max-width: 719px) {
+.container2 {
+	display: grid;
+	grid-template-areas:
+	"header"
+	"menu"
+	"introduction"
+	"section1"
+	"section2"
+	"section3";}}
+

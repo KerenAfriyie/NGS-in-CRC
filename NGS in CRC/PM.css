@@ -1,0 +1,27 @@
+.main-head{grid-area: header;}
+
+.side-nav {grid-area: menu;}
+
+.main-content{grid-area: main;}
+
+@media (min-width: 720px)
+		{
+	.container3 {
+	display: grid;
+	grid-template-areas: 
+	"header header header header header header"
+	"menu main main main main main"
+	"menu main main main main main "
+	"menu main main main main main ";}
+}
+
+@media (max-width: 719px)
+{
+	.container3{
+		display: grid;
+		grid-template-areas: 
+		"header"
+		"menu"
+		"main"
+	}
+}

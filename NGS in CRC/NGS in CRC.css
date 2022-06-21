@@ -1,0 +1,53 @@
+.main-head {
+	grid-area: header;}
+
+.main-text {
+	grid-area: main-text;}
+
+.imagefooter {
+	grid-area: imagefooter;}
+
+.section1 {
+	grid-area: section1;}
+
+.section2 {
+	grid-area: section2;}
+
+.section3 {
+	grid-area: section3;}
+
+.section4 {
+	grid-area: section4;}
+
+@media (min-width: 1140px) {
+	.container{
+		display: grid;
+		grid-template-areas: 
+		"header header header header"
+		"section1 section2 section3 section4"
+		"section1 section2 section3 section4"
+		"imagefooter imagefooter imagefooter imagefooter";}}
+			
+
+@media (min-width: 720px) and (max-width: 1139px) {
+	.container {
+		display: grid;
+		grid-template-areas: 
+		"header header"
+		"section1 section2"
+		"section3 section4"
+		"imagefooter imagefooter";}}
+
+@media (max-width: 719px) {
+	.container {
+		display: grid;
+		grid-template-areas: 
+		"header"
+		"section1"
+		"section2"
+		"section3"
+		"section4"
+		"imagefooter";}}
+
+.imagefooter {
+	text-align: center;}

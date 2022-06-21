@@ -1,0 +1,40 @@
+.main-head {
+	grid-area: header;}
+
+.side-nav {
+	grid-area: menu;}
+
+.main-content {
+	grid-area: main;}
+
+.right-sidebar-tophalf {
+	grid-area: sidebar1;}
+
+.sidebar-bottomhalf {
+	grid-area: sidebar2;}
+
+@media (min-width: 900px) {
+	.container4 {
+		display: grid;
+		grid-template-areas: 
+		"header header header header header header"
+		"menu main main main main sidebar1"
+		"menu main main main main sidebar1"
+		"menu main main main main sidebar2";}}
+
+@media (max-width:  899px) {
+	.container4{
+		display: grid;
+		grid-template-areas:
+		"header"
+		"menu"
+		"main"
+		"sidebar1"
+		"sidebar2";}}
+
+.right-sidebar-tophalf, .right-sidebar-bottomhalf {
+	margin-left: 10px;}
+
+.main-content {
+	padding-bottom: none;}
+

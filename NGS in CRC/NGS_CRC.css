@@ -1,0 +1,39 @@
+.main-head {
+	grid-area: header;}
+}
+
+.side-nav {
+	grid-area: menu;}
+
+.section1 {
+	grid-area: section1;}
+
+.section2 {
+	grid-area: section2;}
+
+.section3 {
+	grid-area: section3;}
+
+.section4 {
+	grid-area: section4;}
+
+@media (min-width: 650px) {
+	.container5 {
+	display: grid;
+	grid-template-areas: 
+	"header header header header header header"
+	"menu section1 section1 section1 section1 section1"
+	"menu section2 section2 section2 section2 section2"
+	"menu section3 section3 section3 section3 section3"
+	"menu section4 section4 section4 section4 section4";}}
+
+@media (max-width:  649px) {
+	.container5 {
+		display: grid;
+	grid-template-areas: 
+	"header"
+	"menu"
+	"section1"
+	"section2"
+	"section3"
+	"section4";}}
